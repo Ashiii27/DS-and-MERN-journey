@@ -29,6 +29,18 @@ void bubble_sort(int n, int arr[]) {
     }
 }
 
+void insertion_sort(int n, int arr[]) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+}
+
 
 int main() {
     int n;
@@ -42,7 +54,8 @@ int main() {
         cin >> arr[i];
 
     //selectionSort(n, arr);
-    bubble_sort(n, arr);
+    //bubble_sort(n, arr);
+    insertion_sort(n, arr);
 
     cout << "sorted array: ";
     for (int i = 0; i < n; i++)
