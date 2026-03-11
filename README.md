@@ -1,4 +1,26 @@
 # DS-and-MERN-journey
-This repo contains all the dsa and web dev stuff i'll go through for my placement journey.
-The structure is gonna be pretty simple...
-There are gonna be 3 folders one for DSA another for MERN Development and the last one for CS Core Subjects(DBMS,CN,OOP,OS,etc).
+
+A personal learning workspace for preparing for technical placements by practicing Data Structures & Algorithms, MERN stack development, and core Computer Science subjects.
+
+## 📁 Project Structure
+
+This repository is organized into three main areas:
+
+- **`DSA/`** — Data structures and algorithms practice problems (C++, etc.).
+- **`MERN/`** — JavaScript/Node.js/React projects and frontend/backend exercises for the MERN stack.
+- **`OS_CORE/`** — Notes and code snippets for core computer science topics (DBMS, CN, OOP, OS, etc.).
+
+## 🚀 How to Use
+
+1. Browse to the folder you want to work on.
+2. Open the relevant file in your editor.
+3. Run or compile the code as needed (C++ files can be built with `g++`, JS files can be run with `node`, etc.).
+
+## 🧩 Notes
+
+- This repo is intended for personal practice and learning.
+- Feel free to add your own examples, notes, or practice problems.
+
+---
+
+> 🛠️ Tip: If you want to track progress, consider adding a `progress.md` or `roadmap.md` file to document what you’ve completed and what you plan to work on next.
