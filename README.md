@@ -23,4 +23,4 @@ This repository is organized into three main areas:
 
 ---
 
-> 🛠️ Tip: If you want to track progress, consider adding a `progress.md` or `roadmap.md` file to document what you’ve completed and what you plan to work on next.
+
