@@ -9,7 +9,9 @@ const username = {
 };
 
 username.firstName = "Mr.H";
-
+username.lastname = "K";
 console.log(username.firstName);
+console.log(username.lastname);
+
 console.log(typeof(username));
 
