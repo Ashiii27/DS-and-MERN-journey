@@ -1,6 +1,15 @@
-let obj = {};
+// let username = {
+//     firstName: "Ashish",
+//     isLoggedIn: "true"
+// };
 
+const username = {
+  firstName: "Ashish",
+  isLoggedIn: "true",
+};
 
-console.log(obj);
-console.log(typeof(obj));
+username.firstName = "Mr.H";
+
+console.log(username.firstName);
+console.log(typeof(username));
 
