@@ -32,6 +32,15 @@ int secondLargest(int arr[], int n) {
     return secondLargest;
 }
 
+bool isSorted(int arr[],int n){
+    for (int i = 1;i<n;i++){
+        if (arr[i] < arr[i-1]){
+            return false;
+        }
+    }
+    return true;
+}
+
 
 int main() {
     
@@ -50,8 +59,12 @@ for(int i=0; i<n; i++){
 // cout<<"the largest element in the array is: "<<largest<<endl;
 
 //Q.2 Second largest element in the array
-int secondLargestElement = secondLargest(arr, n);
-cout<<"the second largest element in the array is: "<<secondLargestElement<<endl;
+// int secondLargestElement = secondLargest(arr, n);
+// cout<<"the second largest element in the array is: "<<secondLargestElement<<endl;
+
+//Q.3 check if array is sorted or not
+bool sorted = isSorted(arr, n);
+cout<<"the array is sorted: "<<sorted<<endl;
 
 
 return 0;
