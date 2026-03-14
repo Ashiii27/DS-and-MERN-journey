@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;    
+
+//solution for first problem
 int maxElement(int arr[],int n) {
     //brute force
     //sort the array and then return the last element 
@@ -13,9 +15,27 @@ int maxElement(int arr[],int n) {
     return largest;
 }
 
+// solution for 2nd problem
+int secondLargest(int arr[], int n) {
+    int largest = arr[0];
+    int secondLargest = INT_MIN;
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if (arr[i] > secondLargest && arr[i] != largest) {
+            secondLargest = arr[i];
+        }
+    }
+
+    return secondLargest;
+}
+
+
 int main() {
     
-//Q1. Finding the largest element in an array
+
 int n;
 cout<<"enter the size of the array : ";
 cin>>n;
@@ -25,8 +45,14 @@ for(int i=0; i<n; i++){
     cin>>arr[i];
 }
 
-int largest = maxElement(arr, n);
-cout<<"the largest element in the array is: "<<largest<<endl;
+//Q1. Finding the largest element in an array
+// int largest = maxElement(arr, n);
+// cout<<"the largest element in the array is: "<<largest<<endl;
+
+//Q.2 Second largest element in the array
+int secondLargestElement = secondLargest(arr, n);
+cout<<"the second largest element in the array is: "<<secondLargestElement<<endl;
+
 
 return 0;
 
