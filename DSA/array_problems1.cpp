@@ -32,6 +32,7 @@ int secondLargest(int arr[], int n) {
     return secondLargest;
 }
 
+//Solution for problem 3
 bool isSorted(int arr[],int n){
     for (int i = 1;i<n;i++){
         if (arr[i] < arr[i-1]){
