@@ -42,6 +42,30 @@ bool isSorted(int arr[],int n){
     return true;
 }
 
+//solution for problem 4
+int removeDuplicates(int arr[], int n) {
+    if (n == 0) return 0;
+
+    int slow = 0;
+
+    for (int fast = 1; fast < n; fast++) {
+        if (arr[fast] != arr[slow]) {
+            slow++;
+            arr[slow] = arr[fast];
+        }
+    }
+
+    return slow + 1;
+}
+
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << arr[i];
+        if (i < n - 1) cout << " ";
+    }
+    cout << endl;
+}
+
 
 int main() {
     
@@ -64,8 +88,13 @@ for(int i=0; i<n; i++){
 // cout<<"the second largest element in the array is: "<<secondLargestElement<<endl;
 
 //Q.3 check if array is sorted or not
-bool sorted = isSorted(arr, n);
-cout<<"the array is sorted: "<<sorted<<endl;
+// bool sorted = isSorted(arr, n);
+// cout<<"the array is sorted: "<<sorted<<endl;
+
+//Q.4 remove duplicates from sorted array
+int newSize = removeDuplicates(arr, n);
+cout<<"the array after removing duplicates is: ";
+printArray(arr, newSize);
 
 
 return 0;
